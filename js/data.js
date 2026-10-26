@@ -58,11 +58,11 @@ window.SITE = {
      ======================================================= */
   items: [
     {
-      id: "speedform-01", cat: "3d", type: "model",
-      title: "Speedform 01", year: "2026",
+      id: "practice-01", cat: "3d", type: "model",
+      title: "Practice 01", year: "2026",
       thumb: "assets/placeholder/thumb-01.svg",
-      src: "",
-      description: "Sample card. Replace with your .glb file and a short description of the form intent.",
+      src: "assets/works/practice-01.glb",
+      description: "Hard-surface modeling practice in Blender.",
     },
     {
       id: "speedform-02", cat: "3d", type: "model",
