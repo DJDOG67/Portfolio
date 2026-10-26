@@ -34,15 +34,13 @@ window.SITE = {
     photo: "",              // 예: "assets/info/profile.webp" (비우면 빈 프레임)
     statement: "I design mobility that sits between vehicle and product — starting from a persona, finding form in sculpture, and developing it through speedform and sketch.",
     education: [
-      { period: "", text: "Changwon Daesan High School" },
-      { period: "", text: "Yulha Middle School" },
-      { period: "", text: "Gwandong Elementary School" },
+      { period: "2022 — 2025", text: "Changwon Daesan High School" },
     ],
     /* 장학·수상 — 위에 있을수록 먼저 보입니다 */
     honors: [
-      { period: "", text: "Dream Scholarship, 13th cohort — Overseas Study Scholarship for Outstanding High School Students, Korea Student Aid Foundation" },
-      { period: "", text: "Dream Ladder Scholarship — Lottery Fund" },
-      { period: "", text: "SOS Scholarship — Samsung Dream Scholarship Foundation" },
+      { period: "2024", text: "Dream Scholarship, 13th cohort — Overseas Study Scholarship for Outstanding High School Students, Korea Student Aid Foundation" },
+      { period: "2022", text: "Dream Ladder Scholarship — Lottery Fund" },
+      { period: "2022", text: "SOS Scholarship — Samsung Dream Scholarship Foundation" },
     ],
     experience: [],
     skills: ["Blender", "Photoshop", "Vizcom", "Hard-surface modeling", "Ballpoint sketching"],
