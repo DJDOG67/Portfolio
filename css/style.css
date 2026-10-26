@@ -450,3 +450,6 @@ button { font: inherit; color: inherit; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.info-row.no-period { grid-template-columns: 1fr; }
+.info-row.no-period span:first-child { display: none; }
+.brand, .foot-name { text-transform: uppercase; }

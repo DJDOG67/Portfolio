@@ -74,7 +74,7 @@
       '<div class="wrap foot-top">' +
         "<div>" +
           '<p class="foot-name">' + esc(S.name) + "</p>" +
-          "<p>" + esc(S.eyebrow) + "</p>" +
+          "<p>" + esc(S.eyebrow) + (S.location ? " — " + esc(S.location) : "") + "</p>" +
         "</div>" +
         "<div><h3>CONTACT</h3><ul>" + contact.join("") + "</ul></div>" +
         "<div><h3>INDEX</h3><ul>" +
@@ -298,10 +298,11 @@
 
     function rows(list) {
       return (list || []).map(function (r) {
-        return '<div class="info-row"><span>' + esc(r.period) + "</span><span>" + esc(r.text) + "</span></div>";
+        return '<div class="info-row' + (r.period ? "" : " no-period") + '"><span>' + esc(r.period) + "</span><span>" + esc(r.text) + "</span></div>";
       }).join("");
     }
     var contact = [];
+    if (S.location) contact.push({ period: "Based in", html: esc(S.location) });
     if (c.email) contact.push({ period: "Email", html: '<a href="mailto:' + esc(c.email) + '">' + esc(c.email) + "</a>" });
     if (c.instagram) contact.push({ period: "Instagram", html: '<a href="' + esc(c.instagram) + '" target="_blank" rel="noopener">' + esc(c.instagram.replace(/^https?:\/\//, "")) + "</a>" });
     if (c.behance) contact.push({ period: "Behance", html: '<a href="' + esc(c.behance) + '" target="_blank" rel="noopener">' + esc(c.behance.replace(/^https?:\/\//, "")) + "</a>" });
@@ -309,6 +310,7 @@
     document.getElementById("info-body").innerHTML =
       (p.statement ? '<p class="statement reveal">' + esc(p.statement) + "</p>" : "") +
       (p.education && p.education.length ? '<section class="info-block reveal"><h2>EDUCATION</h2>' + rows(p.education) + "</section>" : "") +
+      (p.honors && p.honors.length ? '<section class="info-block reveal"><h2>HONORS &amp; SCHOLARSHIPS</h2>' + rows(p.honors) + "</section>" : "") +
       (p.experience && p.experience.length ? '<section class="info-block reveal"><h2>EXPERIENCE</h2>' + rows(p.experience) + "</section>" : "") +
       (p.skills && p.skills.length ? '<section class="info-block reveal"><h2>TOOLS &amp; SKILLS</h2><div class="tags">' +
         p.skills.map(function (s) { return '<span class="tag">' + esc(s) + "</span>"; }).join("") + "</div></section>" : "") +

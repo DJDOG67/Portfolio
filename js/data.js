@@ -6,7 +6,8 @@
 
 window.SITE = {
   /* GNB 왼쪽 브랜드 + 푸터에 표시 */
-  name: "YOUR NAME",
+  name: "Minjae Kim",
+  location: "Korea",
 
   /* 메인 화면 큰 타이틀 (로고 자리) */
   title: "AUTOMOTIVE DESIGN PORTFOLIO",
@@ -15,8 +16,8 @@ window.SITE = {
 
   /* 푸터 + MY INFO 연락처 (비워두면 표시 안 됨) */
   contact: {
-    email: "your@email.com",
-    instagram: "",          // 예: "https://instagram.com/yourid"
+    email: "made.with.dessian@gmail.com",
+    instagram: "https://www.instagram.com/cigar_kmj_6529/",
     behance: "",            // 예: "https://behance.net/yourid"
   },
 
@@ -33,11 +34,17 @@ window.SITE = {
     photo: "",              // 예: "assets/info/profile.webp" (비우면 빈 프레임)
     statement: "I design mobility that sits between vehicle and product — starting from a persona, finding form in sculpture, and developing it through speedform and sketch.",
     education: [
-      { period: "20XX — Present", text: "B.A. Automotive Design, University Name" },
+      { period: "", text: "Changwon Daesan High School" },
+      { period: "", text: "Yulha Middle School" },
+      { period: "", text: "Gwandong Elementary School" },
     ],
-    experience: [
-      { period: "20XX", text: "Exhibition / Competition / Internship" },
+    /* 장학·수상 — 위에 있을수록 먼저 보입니다 */
+    honors: [
+      { period: "", text: "Dream Scholarship, 13th cohort — Overseas Study Scholarship for Outstanding High School Students, Korea Student Aid Foundation" },
+      { period: "", text: "Dream Ladder Scholarship — Lottery Fund" },
+      { period: "", text: "SOS Scholarship — Samsung Dream Scholarship Foundation" },
     ],
+    experience: [],
     skills: ["Blender", "Photoshop", "Vizcom", "Hard-surface modeling", "Ballpoint sketching"],
   },
 
