@@ -3,23 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portfolio — Coming Soon</title>
-<style>
-  :root { color-scheme: dark; }
-  body { margin:0; min-height:100vh; display:grid; place-items:center;
-         background:#14161a; color:#e8eaed;
-         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
-  .card { padding:48px 56px; border-radius:32px;
-          background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12);
-          backdrop-filter:blur(16px); text-align:center; }
-  h1 { margin:0 0 8px; font-size:28px; letter-spacing:.08em; }
-  p  { margin:0; color:#9aa0a6; letter-spacing:.04em; }
-</style>
+<title>Portfolio</title>
+<meta name="description" content="Automotive and mobility design portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Michroma&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <div class="card">
-    <h1>AUTOMOTIVE DESIGN PORTFOLIO</h1>
-    <p>Coming soon</p>
-  </div>
+<body data-page="home">
+<header id="site-header" class="gnb"></header>
+<main>
+  <section class="intro wrap">
+    <p class="eyebrow" data-site="eyebrow"></p>
+    <h1 class="wordmark" data-site="title">AUTOMOTIVE DESIGN PORTFOLIO</h1>
+    <svg class="character-line" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true">
+      <path pathLength="1" d="M0 22 H660 C720 22 748 6 812 6 H1200"/>
+      <path class="accent" pathLength="1" d="M660 22 C720 22 748 6 812 6"/>
+    </svg>
+    <div class="intro-foot">
+      <p class="tagline" data-site="tagline"></p>
+      <span class="scroll-hint">SCROLL ↓</span>
+    </div>
+  </section>
+  <section class="showcase" aria-label="Featured works">
+    <div id="carousel" class="carousel wrap" tabindex="0" aria-roledescription="carousel"></div>
+  </section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>
