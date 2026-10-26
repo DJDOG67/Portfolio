@@ -62,7 +62,7 @@ window.SITE = {
       title: "Practice 01", year: "2026",
       thumb: "assets/works/practice-01-thumb.webp",
       src: "assets/works/practice-01.glb",
-      description: "Hard-surface modeling practice in Blender.",
+      description: "My first self-taught car model, built from scratch in Blender.",
     },
     {
       id: "speedform-02", cat: "3d", type: "model",
