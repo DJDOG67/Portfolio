@@ -60,7 +60,7 @@ window.SITE = {
     {
       id: "practice-01", cat: "3d", type: "model",
       title: "Practice 01", year: "2026",
-      thumb: "assets/placeholder/thumb-01.svg",
+      thumb: "assets/works/practice-01-thumb.webp",
       src: "assets/works/practice-01.glb",
       description: "Hard-surface modeling practice in Blender.",
     },
