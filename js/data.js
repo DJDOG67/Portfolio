@@ -31,7 +31,7 @@ window.SITE = {
 
   /* MY INFO 페이지 */
   profile: {
-    photo: "",              // 예: "assets/info/profile.webp" (비우면 빈 프레임)
+    photo: "assets/info/profile.webp",
     statement: "I design mobility that sits between vehicle and product — starting from a persona, finding form in sculpture, and developing it through speedform and sketch.",
     education: [
       { period: "2022 — 2025", text: "Changwon Daesan High School" },
